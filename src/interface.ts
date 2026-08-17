@@ -19,3 +19,17 @@ class masalchai implements teaRecipe {
     milk= 50
 }
 // interface cupsize = 
+interface Box<T>{
+    content :T
+}
+const numberBox :Box<number>={content:10}
+const numberB :Box<string>= {content:"Namdev"}
+
+interface ApiPropise <T>{
+    status:number,
+    data:T
+}
+const response:ApiPropise<{flavour:string}> = {
+    status:404,
+    data:{flavour:"masala  Chai"}
+}
